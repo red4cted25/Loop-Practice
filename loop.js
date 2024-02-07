@@ -151,13 +151,12 @@ fibonacci(10)
 console.log('')
 // square made of the numbers
 function square(coolion) {
-    let square = '';
-    for(let i = 0; i <= coolion; i++){
-        for(let j = 0; j <= coolion; j++){
-            square += j + ' ';
+    for (let i = 0; i <= coolion; i++) {
+        let square = '';
+        for (let j = 0; j <= coolion; j++) {
+            square += Math.abs(i - j) + ' ';
         }
-        square += '\n';
+        console.log(square)
     }
-    console.log(square)
 }
 square(8)
